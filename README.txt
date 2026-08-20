@@ -567,5 +567,5 @@ The final system combines:
           ->
     Streamlit Application
 
-The solution satisfies the core MVP requirements while providing a foundation for a more advanced Nigerian financial-fraud monitoring system.
+This meets the core MVP requirements while laying the foundation for a more advanced Nigerian financial fraud monitoring system.
 
