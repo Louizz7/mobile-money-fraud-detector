@@ -1,8 +1,7 @@
-MOBILE-MONEY FRAUD DETECTION
-3MTT Data Science Project
+3MTT DATA SCIENCE PROJECT
 AUTHOR: Louis Mbagwu
 
-Project Title: Mobile-Money Fraud Detection
+Project Title: MOBILE-MONEY FRAUD DETECTION
 Problem Context: Fraud hides in transactions.
 Dataset: PaySim synthetic mobile-money transaction dataset
 Primary Tools: Python, pandas, NumPy, scikit-learn, XGBoost, SciPy, joblib, Streamlit, VS Code
