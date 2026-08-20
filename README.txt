@@ -9,7 +9,6 @@ Primary Tools: Python, pandas, NumPy, scikit-learn, XGBoost, SciPy, joblib, Stre
 
 
 1. PROJECT OVERVIEW
--------------------
 
 This project develops an end-to-end machine-learning system for detecting potentially fraudulent mobile-money transactions.
 
@@ -32,7 +31,6 @@ The project was designed around a Nigerian financial-technology problem:
 
 
 2. PROBLEM STATEMENT
---------------------
 
 Mobile-money and digital financial transactions generate large volumes of transaction data, making manual identification of fraudulent activity difficult.
 
@@ -47,7 +45,6 @@ Core MVP requirements:
 
 
 3. DATASET
-----------
 
 The project uses the PaySim synthetic mobile-money transaction dataset. The dataset contains transaction-level information including:
 
@@ -70,7 +67,6 @@ PaySim is a synthetic dataset. Therefore, the model's performance on PaySim shou
 
 
 4. MACHINE LEARNING WORKFLOW
-----------------------------
 
 The project follows this workflow:
 
@@ -129,7 +125,6 @@ The project follows this workflow:
 
 
 5. FEATURE ENGINEERING
-----------------------
 
 Fraud-specific features were developed to capture transaction behavior.
 
@@ -169,7 +164,6 @@ The production predictor reproduces the same feature-engineering logic used duri
 
 
 6. DATA LEAKAGE PREVENTION
---------------------------
 
 Leakage prevention was treated as an important part of the machine-learning workflow.
 
@@ -186,7 +180,6 @@ The final workflow:
 
 
 7. CLASS IMBALANCE
-------------------
 
 Fraud represents a very small proportion of PaySim transactions. The final pipeline uses class weighting rather than relying on SMOTE.
 
@@ -205,7 +198,6 @@ Earlier experimentation considered SMOTE, but the final production training work
 
 
 8. MODELS
----------
 
 The project evaluates several classification algorithms, including:
 
@@ -224,7 +216,6 @@ The final calibrated model is stored as:
 
 
 9. HYPERPARAMETER OPTIMIZATION
-------------------------------
 
 Hyperparameter tuning was performed using a computationally controlled strategy.
 
@@ -242,7 +233,6 @@ This approach was introduced because the full PaySim dataset is very large and i
 
 
 10. MODEL CALIBRATION
----------------------
 
 After model selection, probability calibration was performed.
 
@@ -260,7 +250,6 @@ Calibration was included because the system is intended to produce meaningful fr
 
 
 11. FRAUD DECISION THRESHOLD
-----------------------------
 
 The default classification threshold of 0.50 was not assumed to be optimal for fraud detection.
 
@@ -276,7 +265,6 @@ It is stored in:
 
 
 12. FINAL UNBIASED TEST RESULTS
--------------------------------
 
 The final evaluation was performed on the untouched test set.
 
@@ -318,7 +306,6 @@ These results are exceptionally strong, but they must be interpreted in the cont
 
 
 13. PRODUCTION PREDICTION PIPELINE
-----------------------------------
 
 The production prediction engine is: predictor.py
 
@@ -358,7 +345,6 @@ Its workflow is:
 
 
 14. ANOMALY DETECTION
----------------------
 
 The production system calculates five anomaly flags:
 
@@ -377,7 +363,6 @@ These features are intended to make model output more understandable to a fraud 
 
 
 15. RISK CLASSIFICATION
------------------------
 
 The production system translates fraud probability into four operational categories:
 
@@ -390,7 +375,6 @@ The risk classification is implemented in the production predictor.
 
 
 16. STREAMLIT APPLICATION
-------------------------
 
 The Streamlit application provides a user-friendly interface for transaction analysis.
 
@@ -421,7 +405,6 @@ The application should open in the browser.
 
 
 17. PROJECT STRUCTURE
----------------------
 
 Recommended repository structure:
 
@@ -454,11 +437,10 @@ Recommended repository structure:
         +-- results/
 
 IMPORTANT:
-The large raw PaySim CSV won't be uploaded to GitHub. Rather, the dataset will be kept locally or instructions will be provided for obtaining it.
+The large raw PaySim CSV won't be uploaded to GitHub. Rather, the dataset will be kept locally, or instructions will be provided for obtaining it.
 
 
 18. INSTALLATION
-----------------
 
 Create a virtual environment:
 
@@ -474,7 +456,6 @@ Install the required dependencies:
 
 
 19. RUNNING THE PROJECT
------------------------
 
 Test the production predictor:
 
@@ -486,7 +467,6 @@ Start the Streamlit application:
 
 
 20. PRODUCTION ARTIFACTS
-------------------------
 
 The models directory contains the deployment artifacts, including:
 
@@ -502,7 +482,6 @@ These artifacts allow the production prediction pipeline to reproduce the traine
 
 
 21. LIMITATIONS
----------------
 
 Synthetic data:
 PaySim is simulated data and does not contain every signal available in real Nigerian financial systems.
@@ -526,7 +505,6 @@ Future versions could incorporate:
 
 
 22. NIGERIAN CONTEXT - FUTURE IMPROVEMENTS
-------------------------------------------
 
 For a real Nigerian mobile-money deployment, future versions could include:
 
@@ -547,7 +525,6 @@ For a real Nigerian mobile-money deployment, future versions could include:
 
 
 23. ETHICAL CONSIDERATIONS
---------------------------
 
 The model should be treated as a fraud-risk decision-support system, not as the sole authority for irreversible financial decisions.
 
@@ -564,7 +541,6 @@ A real deployment should include:
 
 
 24. CONCLUSION
--------------
 
 This project demonstrates a complete machine-learning pipeline for mobile-money fraud detection, from raw transaction data through production deployment.
 
@@ -594,10 +570,3 @@ The final system combines:
 
 The solution satisfies the core MVP requirements while providing a foundation for a more advanced Nigerian financial-fraud monitoring system.
 
-
-AUTHOR
-------
-
-Louis Mbagwu
-
-3MTT Data Science Project
