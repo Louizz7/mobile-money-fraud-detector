@@ -1,16 +1,10 @@
-Mobile-Money Fraud Detection - Python Dependencies
-Generated from the project's current training (Mobile_Money_Fraud_Detection_no_SMOTE), prediction, and Streamlit code.
-
 numpy
 pandas
-matplotlib
-seaborn
-plotly
 scikit-learn
 scipy
 xgboost
 joblib
 streamlit
-json
-warnings
-pathlib
+plotly
+matplotlib
+seaborn
