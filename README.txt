@@ -33,7 +33,7 @@ The project was designed around a Nigerian financial-technology problem:
 
 Mobile-money and digital financial transactions generate large volumes of transaction data, making manual identification of fraudulent activity difficult.
 
-The objective of this project is to develop a machine-learning system capable of identifying suspicious transactions and providing a risk score that can support fraud investigation and transaction monitoring.
+The objective of this project is to develop a machine-learning system capable of identifying suspicious transactions and assigning a risk score to support fraud investigation and transaction monitoring.
 
 Core MVP requirements:
 
@@ -401,6 +401,10 @@ Run the application with:
     python -m streamlit run app.py
 
 The application should open in the browser.
+
+Alternatively, you can use the provided Streamlit URL:
+
+https://mobile-money-fraud-detector.streamlit.app/
 
 
 17. PROJECT STRUCTURE
