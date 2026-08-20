@@ -1,0 +1,8 @@
+{
+    "model": "final_calibrated_fraud_model.pkl",
+    "encoder": "onehot_encoder.pkl",
+    "scaler": "standard_scaler.pkl",
+    "threshold": "fraud_decision_threshold.pkl",
+    "feature_config": "feature_config.pkl",
+    "metadata": "model_metadata.json"
+}

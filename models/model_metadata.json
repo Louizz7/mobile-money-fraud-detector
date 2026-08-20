@@ -1,0 +1,51 @@
+{
+    "project": "Mobile-Money Fraud Detection",
+    "dataset": "PaySim",
+    "model": "Random Forest",
+    "calibration_method": "Isotonic",
+    "decision_threshold": 0.09,
+    "feature_count": 28,
+    "categorical_features": [
+        "type"
+    ],
+    "numeric_features": [
+        "step",
+        "amount",
+        "oldbalanceOrg",
+        "newbalanceOrig",
+        "oldbalanceDest",
+        "newbalanceDest",
+        "origin_balance_error",
+        "destination_balance_error",
+        "origin_balance_diff",
+        "destination_balance_diff",
+        "origin_amount_ratio",
+        "destination_amount_ratio",
+        "origin_zero_balance",
+        "destination_zero_balance",
+        "origin_drained",
+        "hour",
+        "day",
+        "day_of_week",
+        "is_weekend",
+        "log_amount",
+        "origin_balance_change_pct",
+        "full_balance_transfer",
+        "large_transaction"
+    ],
+    "training_samples": 5090096,
+    "test_samples": 1272524,
+    "test_fraud_cases": 1643,
+    "test_fraud_rate": 0.0012911347840983745,
+    "final_metrics": {
+        "accuracy": 0.99999292744184,
+        "balanced_accuracy": 0.9987807474072302,
+        "precision": 0.9969586374695864,
+        "recall": 0.9975654290931223,
+        "f1_score": 0.9972619409796166,
+        "roc_auc": 0.9987826925165163,
+        "pr_auc": 0.9975685724523046,
+        "mcc": 0.9972584463979012,
+        "brier_score": 3.2529012596057038e-06
+    }
+}
